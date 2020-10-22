@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Hutch</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  background-image: url("linuxkali.jpg");
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  border-radius: 10px;
+  background-color: rgb(14, 167, 22);
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+#img1 {
+  margin-left: 20px;
+  border-radius: 30px;
+}
+
+#img2 {
+   border-radius: 0 30px 30px 30px;
+   margin-left: 120px; 
+}
+
+#img3 {
+  border-radius: 5px 5px 5px 5px;
+  margin-left: 40px;
+}
+
+#img4 {
+  border-radius: 5px 5px 5px 5px;
+  margin-left: 70px;
+}
+
+#img5 {
+  border-radius: 5px 5px 5px 5px;
+  margin-left: 110px;
+}
+
+#img6 {
+  border-radius: 5px;
+  margin-left: 20px;
+
+}
+
+#img7 {
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Hutch</h1>
+  <p>Redesigned creative by Harlon.</p>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="article.html">Article</a>
+  <a href="video.html">Videos</a>
+  <a href="about.html">About</a>
+  <a href="contact.html" class="right">Contact</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2></h2>
+    <h5></h5>
+    <img id = "img1" src="me.jpg" width="60px" height="60px">
+    <div></div>
+    <img id = "img2" src="externalb.jpg" width="200px" height="200px">
+    <p></p>
+    <h3>Brainwave Interface</h3>
+    <p>BWI...</p>
+    <div></div><br>
+    <img id="img3" src="brain.jpg" width="140px" heigth="140px">
+    <div></div>
+    <img id="img4" src="Brainwaves.jpg" width="140px" heigth="140px">
+    <div></div>
+    <img id="img5" src="puzzlebox.jpg" width="140px" heigth="140px">
+  </div>
+  <div class="main">
+    <h2>Puzzlebox Orbit</h2>
+    <h5>BWI helicopter, October 01, 2020</h5>
+    <div></div>
+    <iframe id="img6" width="560" height="315" src="https://www.youtube.com/embed/x0e6q400-ig" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>Something to look at..</p>
+    <p>This is a great project that encompasses brainwave interface headset with a helicopter. There is some programming in C "sketches" which makes it even more interesting to play with. </p>
+    <br>
+    <h2>BWI Revamped</h2>
+    <h5>My project with BWI, October 01, 2020</h5>
+    <div></div>
+    <video id="img7" src="WP_20151014_006.mp4" width="560" height="315" audio controls frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
+    <p>My Macgyverism..</p>
+    <p>I saw this project and knew it was for me to tear apart. I took my Arduino Uno kit with a breadboard and mixed it with the Puzzlebox Orbit electronics. I preprogrammed the mcu to say brain power:). When the EEG headset started communicating with the Arduino Uno the screen would show what I had programmed it to state.</p>
+  </div>
+</div>
+
+<div class="footer">
+   <p>&copy 2020 | Creative by Harlon Hutchison | Harlo Inc.</p>
+</div>
+
+</body>
+</html>
