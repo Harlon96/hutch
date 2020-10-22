@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Hutch</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background-image: url("linuxkali.jpg");
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  border-radius: 10px;
+  background-color: rgb(14, 167, 22);
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+#img1 {
+  margin-left: 20px;
+  border-radius: 30px;
+}
+
+#img2 {
+   border-radius: 0 30px 30px 30px;
+   margin-left: 120px; 
+}
+
+#img3 {
+  border-radius: 5px 5px 5px 5px;
+  margin-left: 40px;
+}
+
+#img4 {
+  border-radius: 5px 5px 5px 5px;
+  margin-left: 70px;
+}
+
+#img5 {
+  border-radius: 5px 5px 5px 5px;
+  margin-left: 110px;
+}
+
+#img6 {
+  border-radius: 5px;
+  margin-left: 20px;
+
+}
+
+#img7 {
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Hutch</h1>
+  <p>Redesigned creative by Harlon.</p>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="article.html">Article</a>
+  <a href="video.html">Videos</a>
+  <a href="about.html">About</a>
+  <a href="contact.html" class="right">Contact</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2></h2>
+    <h5></h5>
+    <img id = "img1" src="me.jpg" width="60px" height="60px">
+    <div></div>
+    <img id = "img2" src="quotes.jpg" width="220px" height="220px">
+    <p></p>
+    <h3>Thoughts</h3>
+    <p>Pictures that express different thoughts I have.</p>
+    <div></div><br>
+    <img id="img3" src="five.jpg" width="140px" heigth="140px">
+    <div></div><br>
+    <img id="img4" src="funnel.jpg" width="140px" height="140px">
+    <div></div><br>
+    <img id="img5" src="man.jpg" width="140px" height="140px">
+  </div>
+  <div class="main">
+    <h2>Programming</h2>
+    <h5>Path of a programmer, October 01, 2020</h5>
+    <div></div>
+    <img id="img6" src="tenor.gif" width="300px" height="230px">
+    <p>Have you chosen what pill to take?</p>
+    <p>Programming isn't for everyone. You have to invest into yourself. It takes time and patience for one to acheive the goals of a master. In the end it will be worth the time. Hope to see you on the other side Neo!</p>
+    <br>
+    <h2>Path of Ascension</h2>
+    <h5>Your Path, October 01, 2020</h5>
+    <div></div>
+    <img id="img7" src="newpath.jpg" width="300px" height="230px">
+    <p>Something to ponder on...</p>
+    <p>Your direction must be sound with any path you set off on. Be clear, concise, and thorough in your path to ascension. If you stray from your goals, they have a tendency to never happen. Focus on what your prize is and nothing more.</p>
+  </div>
+</div>
+
+<div class="footer">
+   <p>&copy 2020 | Creative by Harlon Hutchison | Harlo Inc.</p>
+</div>
+
+</body>
+</html>
