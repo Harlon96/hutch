@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Hutch</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="script.js"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  background-image: url("linuxkali.jpg");
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  border-radius: 10px;
+  background-color: rgb(14, 167, 22);
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+#img1 {
+  margin-left: 20px;
+  border-radius: 30px;
+}
+
+#img2 {
+   border-radius: 0 30px 30px 30px;
+   margin-left: 120px; 
+}
+
+#img3 {
+  border-radius: 5px 5px 5px 5px;
+  margin-left: 40px;
+}
+
+#img4 {
+  border-radius: 5px 5px 5px 5px;
+  margin-left: 70px;
+}
+
+#img5 {
+  border-radius: 5px 5px 5px 5px;
+  margin-left: 110px;
+}
+
+#img6 {
+  border-radius: 5px;
+  margin-left: 20px;
+
+}
+
+#img7 {
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Hutch</h1>
+  <p>Redesigned creative by Harlon.</p>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="article.html">Article</a>
+  <a href="video.html">Videos</a>
+  <a href="about.html">About</a>
+  <a href="contact.html" class="right">Contact</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2></h2>
+    <h5></h5>
+    <img id = "img1" src="me.jpg" width="60px" height="60px">
+    <div></div>
+    <img id = "img2" src="Rob.jpg" width="220px" height="220px">
+    <p></p>
+    <h3>Contact Me:</h3>
+    <p>Call me is the first app, Second is a voice with the alternative</p>
+    <a href="tel:+4077059585"><img  src="binary.jpg" id="img3" width="140px" height="140px"></a><br>
+    <div></div>
+    <a><img  src="binary.jpg" id="img4" width="140px" height="140px" onclick="speak()"></a><br>
+    <div></div>
+    <a><img  src="Apple CEO Tim.png" id="img5" width="140px" height="140px"></a><br>
+  </div>
+  <div class="main">
+    <h2>Most Inspiring Speech</h2>
+    <h5>Steve Jobs, Feb. 13, 2013</h5>
+    <div></div>
+    <iframe  id="img6" width="560" height="315" src="https://www.youtube.com/embed/PAs867sz9oE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>Inspirational..</p>
+    <p>Steve Jobs is a great role model on how to get it done.</p>
+    <br>
+    <h2>Programming Quote</h2>
+    <h5>Quote, October 01, 2020</h5>
+    <div></div>
+    <img id="img7" src="donald.png" width="560" height="315">
+    <p>Beauty..</p>
+    <p>Perception is reality. If you think positive you will gravitate to positive energies. On the other hand if you do the latter you will receive what you are looking for in life. </p>
+  </div>
+</div>
+
+<div class="footer">
+   <p>&copy 2020 | Creative by Harlon Hutchison | Harlo Inc.</p>
+</div>
+
+</body>
+</html>
